@@ -1,51 +1,61 @@
-# IAgilize | Gestão Inteligente de Demandas
+# IAgilize | Gestão Inteligente
+
+**Automação de demandas, financeiro e comunicação para profissionais autônomos.**
 
 ## Sobre o projeto
 
-O IAgilize é uma **Prova de Conceito (POC) acadêmica** que explora o uso de Inteligência Artificial Generativa e Processamento de Linguagem Natural (NLP) para apoiar profissionais autônomos, inicialmente com foco em Social Media.
+O IAgilize é uma Prova de Conceito (POC) acadêmica que explora o uso de Inteligência Artificial Generativa e Processamento de Linguagem Natural (NLP) para automatizar a organização de demandas de profissionais autônomos.
 
-A proposta é interpretar mensagens de clientes, identificar informações relevantes (cliente, serviço, prazo e valor) e organizar a solicitação como uma tarefa em um painel demonstrativo.
+A proposta surgiu a partir de um problema comum: profissionais que recebem solicitações de clientes por diferentes canais, enfrentam dificuldades para organizar tarefas, acompanhar prazos e controlar informações financeiras.
 
-## Funcionalidades demonstradas
+O IAgilize propõe transformar mensagens em informações estruturadas, auxiliando na gestão e organização dessas demandas.
 
-- Interpretação de mensagens com a API Gemini.
-- Extração estruturada de cliente, plano/serviço, demanda, prazo e valor.
-- Classificação simplificada entre consulta/orçamento e contratação.
-- Registro de demandas em uma lista mantida em memória.
-- Cálculo demonstrativo de receitas previstas.
-- Interface conversacional construída com Gradio.
+## Objetivos da POC
 
-## Tecnologias
+- Interpretar mensagens enviadas por clientes.
+- Identificar automaticamente informações relevantes, como nome, tipo de demanda, prazo e valor financeiro.
+- Organizar as informações em uma estrutura automatizada.
+- Simular a criação e o gerenciamento de tarefas.
+- Demonstrar a viabilidade do uso de IA Generativa na automação de processos.
 
-- Python
-- Google Gemini API (`google-genai`)
-- Gradio
-- JSON
-- Google Colab
+## Tecnologias utilizadas
 
-## Como executar no Google Colab
+- **Python:** linguagem principal do projeto.
+- **Google Colab:** ambiente de desenvolvimento.
+- **Google Gemini API:** processamento com Inteligência Artificial Generativa.
+- **NLP:** interpretação de linguagem natural e extração de informações.
+- **Gradio:** criação da interface interativa.
+- **JSON:** estruturação e organização de dados.
 
-1. Abra `IAgilize_Gestao_Inteligente.ipynb` no Google Colab.
-2. No painel lateral **Secrets** (ícone de chave), adicione `GEMINI_API_KEY` com uma chave válida do Google AI Studio.
-3. Habilite o acesso ao segredo para o notebook.
-4. Execute as células em ordem.
-5. Teste uma mensagem usando os exemplos da interface.
+## Fluxo de funcionamento
 
-**Nunca coloque sua chave de API diretamente no código ou em arquivos publicados.** Se uma chave já foi exposta, revogue-a e crie outra.
+1. O cliente envia uma mensagem.
+2. O sistema recebe o texto.
+3. A IA analisa a mensagem.
+4. As informações relevantes são extraídas.
+5. O sistema simula a criação de uma tarefa.
+6. Os dados são organizados para acompanhamento.
 
-## Limitações desta POC
+## Exemplo de aplicação
 
-- Os registros são mantidos apenas em memória e são perdidos ao reiniciar a sessão.
-- O fluxo de WhatsApp é apenas uma resposta sugerida na interface. Não existe integração real com WhatsApp.
-- Os valores do catálogo são exemplos definidos para a demonstração, não uma tabela comercial vigente.
-- A classificação de orçamento/contratação é simplificada e precisa de validação humana antes de qualquer decisão financeira.
-- A interpretação depende da resposta gerada pelo modelo e pode conter erros.
+**Mensagem recebida:**
 
-## Contexto
+"Boa tarde, meu nome é João. Preciso de uma criação de post para o dia 10."
 
-Projeto apresentado como prova de conceito de uma solução de IA para organização de demandas de profissionais autônomos. A apresentação da solução descreve o problema, os objetivos, as tecnologias e o fluxo proposto.
+**Informações identificadas:**
+- Cliente: João
+- Tarefa: Criação de post
+- Prazo: Dia 10
 
-## Estrutura
+## Sobre o desenvolvimento
 
-- `IAgilize_Gestao_Inteligente.ipynb`: notebook principal.
-- `requirements.txt`: dependências Python.
+Projeto acadêmico desenvolvido em colaboração por:
+
+- **Tatiane Avansi Caires**
+- **Valdeyr Moreira Nicacio**
+
+O trabalho apresenta uma proposta de solução tecnológica e uma prova de conceito para demonstrar a aplicação prática de Inteligência Artificial Generativa na automação de atividades profissionais.
+
+## Natureza do projeto
+
+Esta implementação é uma POC (Proof of Concept). Algumas funcionalidades são demonstrativas e não representam uma solução comercial completa ou uma integração efetiva com serviços externos.
