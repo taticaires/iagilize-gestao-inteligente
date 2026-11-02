@@ -43,9 +43,9 @@ O IAgilize propõe transformar mensagens em informações estruturadas, auxilian
 "Boa tarde, meu nome é João. Preciso de uma criação de post para o dia 10."
 
 **Informações identificadas:**
-- Cliente: João
-- Tarefa: Criação de post
-- Prazo: Dia 10
+-  Cliente - João
+-  Tarefa - Criação de post
+-  Prazo - Dia 10
 
 ## Sobre o desenvolvimento
 
